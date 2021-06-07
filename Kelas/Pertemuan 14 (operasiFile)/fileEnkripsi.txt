@@ -1,0 +1,27 @@
+xqkf ujkhvEjkrgt(ejct pHkng[], kpv igugt){
+	uvtkpi vgzv;
+	khuvtgco hkngKprwv;
+	qhuvtgco hkngQwvrwv;
+	
+	hkngKprwv.qrgp(pHkng);
+	igvnkpg(hkngKprwv, vgzv);
+	hkngKprwv.enqug();
+	
+	hqt(kpv k=0; k<vgzv.ukbg(); ++k) {
+		kh(vgzv[k] >= 65 && vgzv[k] <= 90){
+			vgzv[k] += igugt;
+			kh(vgzv[k] > 90){
+				vgzv[k] = vgzv[k] - 26;
+			}
+		} gnug kh(vgzv[k] >= 97 && vgzv[k] <= 122){
+			vgzv[k] += igugt;
+			kh(vgzv[k] > 122){
+				vgzv[k] = vgzv[k] - 26;
+			}
+		}
+	}
+
+	hkngQwvrwv.qrgp(pHkng);
+	hkngQwvrwv << vgzv;
+	hkngQwvrwv.enqug();
+}
